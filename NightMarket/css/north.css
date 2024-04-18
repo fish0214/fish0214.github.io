@@ -1,0 +1,232 @@
+body{
+    margin: 0 auto;
+    width: 960px;
+    background-color: #00284d;
+    color: #ffffdf;
+}
+h2{font-size: 37px;}
+h3{font-size: 27px;}
+i{color: rgb(198, 11, 48);}
+/* 導覽列 */
+nav a{
+    color: inherit;
+    text-decoration: none;
+}
+nav li{
+    color: #00284d;
+    font-size: 25px;
+    font-weight: bolder;
+}
+nav li:hover{
+    background-color: #ffbb68;
+}
+
+nav ul{
+    list-style: none;
+    background-color: #ffffc4;
+    margin: 0;
+    padding: 10px;
+}
+.menu{
+    display: flex;
+    justify-content: space-evenly;
+}
+/*夜市資訊*/
+.introduction img{
+    width: 180px;
+    position: relative;
+}
+.introduction h2 h3 p{
+    position: absolute;
+    left: 100px;
+}
+article{
+    float: left;
+    width: 70%;
+}
+aside{
+    float: right;
+    width: 30%;
+    padding-top: 50px;
+}
+.introduction{
+    clear: both;
+}
+/*食物*/
+div#food1 img#love1{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 8px;
+    right: 8px;
+    display: none;
+}
+div#food2 img#love2{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 8px;
+    right: 8px;
+    display: none;
+}
+div#food3 img#love3{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 8px;
+    right: 8px;
+    display: none;
+}
+div#food1 img#love4{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 8px;
+    right: 8px;
+    display: none;
+}
+div#food2 img#love5{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 8px;
+    right: 8px;
+    display: none;
+}
+div#food3 img#love6{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 8px;
+    right: 8px;
+    display: none;
+}
+div#food1 img#love7{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 8px;
+    right: 8px;
+    display: none;
+}
+div#food2 img#love8{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 8px;
+    right: 8px;
+    display: none;
+}
+div#food3 img#love9{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    bottom: 8px;
+    right: 8px;
+    display: none;
+}
+div.food{
+    position: relative;
+    height: 140px;
+}
+div#food1 img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+div#food1{
+    position: absolute;
+    top: 10px;
+}
+div#food2{
+    position: absolute;
+    left: 130px;
+    top: 10px;
+}
+div#food2 img{
+    width: 125px;
+    height: 120px;
+    border-radius: 50%;
+}
+div#food3{
+    position: absolute;
+    left: 260px;
+    top: 10px;
+}
+div#food3 img{
+    width: 123px;
+    height: 125px;
+    border-radius: 50%;
+}
+/* 商店介紹*/
+.shop{
+    position: relative;
+    border: 1px black solid;
+    background-color: cornsilk;
+    width: 960px;
+    height: 205px;
+}
+.introduction div.comment{
+    position: absolute;
+    right: 12px;
+    top: 62px;
+    max-height: 120px;
+    max-width: 740px;
+    overflow-y: overlay;
+    border: 2px solid rgb(90, 90, 90);
+    background-color: rgb(227, 227, 227);
+}
+.comment div#comments p{
+    border: 1px black solid;
+    background-color: rgb(181, 181, 181);
+    color: rgb(15, 20, 53);
+}
+.comment div#comments{
+    padding: 0.2px;
+}
+.shop img{
+    position: absolute;
+    padding: 5px;
+    left: 0;
+    width: 180px;
+    height: 180px;
+}
+.shop h3{
+    position: absolute;
+    left: 200px;
+    top: -10px;
+    color: #00284d;
+    font-size: 25px;
+}
+/*回首頁按鈕*/
+#topImg{
+    width: 120px;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+}
+/*頁尾*/
+footer{
+    height: 90px;
+    color: #ffffc4;
+}
+
+.footer_text{
+    justify-content: center center;
+    padding: 25px 400px 0px 200px;
+}
+/*對話框*/
+.popup {
+    position:absolute;
+    display: block;
+    width: 300px;
+    height: 180px;
+    top:250px;
+    left: 600px;
+    text-align: center;
+    background:#ffffc4;
+    color: black;
+    border: #ff8c00 10px solid;
+    border-radius: 15px 15px 15px 15px;
+    z-index: 2;
+}

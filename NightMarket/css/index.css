@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Notable&family=Racing+Sans+One&family=Shrikhand&display=swap');
+/*輪播照片*/
+#pic{
+    height: 721px;
+    width: 420px;
+    /* background-size: cover; */
+    /* margin: auto; */
+}
+/*進入首頁*/
+.enter{
+    width: 500px;
+    height: 100px;
+    border: 0ch;
+    border-radius: 10px;
+    background-color: initial;
+    color: #00284D;
+    font-size: 65px;
+    font-family: 'Racing Sans One', cursive;
+}
+
