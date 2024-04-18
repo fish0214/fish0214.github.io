@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\css\east.css">
+    <link rel="icon" href="twimg/nm logo.png">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-beta3-web/css/all.css">
+    <script src="../js/east.js"></script>
+    <title>夜生活</title>
+</head>
+<body>
+    <div class="items">
+        <nav>
+            <ul class="menu">
+                <li><a href="north.html">北部</a></li>
+                <li><a href="mid.html">中部</a></li>
+                <li><a href="south.html">南部</a></li>
+                <li><a href="east.html">東部</a></li>
+                <li><a href="home.html#chart">精選小吃</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="popup" id="popup">
+        <h4>點擊食物,顯示商家資訊<br>雙擊食物,加入喜愛店家</h4>
+        <h5>祝您愉快^.- </h5>
+        <button onclick="CloseModal()">關閉</button>
+    </div>
+    <!--東大門-->
+    <div class="nightmarket" id="eastbigdoor">
+        <article>
+            <h2><i class="fa-solid fa-map-pin"></i> 東大門夜市</h2>
+            <h3>地址</h3>
+            <p>花蓮縣花蓮市中山路50號</p>
+            <h3>交通方式</h3> 
+            <p>（自行開車)<br>走台9線→進入花蓮市區後→中山路往海邊方向→至重慶路交叉路口即可抵達。</p><br>
+            <p>（大眾運輸)<br>台鐵:花蓮火車站，建議搭乘花蓮客運各路線公車，於花蓮總站下車。</p>
+        </article>
+        <aside><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1822.8117284286966!2d121.60937736774629!3d23.973751783709595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34689fe9f14e0c29%3A0xbe7996e0680a20e5!2z5p2x5aSn6ZaA5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1654954529637!5m2!1szh-TW!2stw" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></aside>
+    </div>
+    <div class="introduction">
+        <div class="food">
+            <div id="food1" onclick="one()"  ondblclick="heart1()"><img src="foodimg/原醉.jpg"><img src="love.png" alt="" id="love1"></div>
+            <div id="food2" onclick="two()"  ondblclick="heart2()"><img src="foodimg/億大雪花冰.jpg" ><img src="love.png" alt="" id="love2"></div>
+            <div id="food3" onclick="thr()"  ondblclick="heart3()"><img src="foodimg/強蛋餅.jpg" ><img src="love.png" alt="" id="love3"></div>
+        </div>
+        <hr>
+        <div class="shop" id="show1" style="display: none;">
+            <img src="foodimg/原醉.jpg" alt="" id="drink">
+            <h3>原醉 4.5⭐</h3>
+            <div class="comment">
+                <div id="comments"><p>「米香」和「荔香」小米酒調酒味道融合得非常好，清爽的香氣，口感十分順口！離開夜市後冰塊稍微融化稀釋也一樣好喝，有驚艷到！</p></div>
+                <div id="comments"><p>提供很多小米酒調酒非常有特色，點了米香與潔西卡，微甜很適合女生喝，價格也不貴，相當推薦！</p></div>
+                <div id="comments"><p>米拉桑酒味十足，第一口口感強烈，但越喝越舒服，忍不住會想再喝一杯。</p></div>
+                <div id="comments"><p>推薦商品無雷，米酒的調酒平衡感很好，價位不貴份量足，老闆也很帥，非常值得來這喝酒</p></div>
+                <div id="comments"><p>米香非常好喝，帶有一點氣泡加上小米酒的香味很想再喝一次，荔荔安跟潔西卡也很好喝！老闆很帥！</p></div>
+            </div>
+        </div>
+        <div class="shop" id="show2" style="display: none;">
+            <img src="foodimg/億大雪花冰.jpg" alt="" id="ice">
+            <h3>億大雪花冰 4.9⭐</h3>
+            <div class="comment">
+                <div id="comments"><p>花生腰果，香氣十足不甜膩，整杯吃完會意猶未盡。</p></div>
+                <div id="comments"><p>火龍奇異果雪花冰超好吃，不會過酸或過甜，因為是天然水果製成，吃的出天然味道卻不失水果原來的香味，不會感覺甜膩，真的超級好吃</p></div>
+                <div id="comments"><p>花生的口感非常特別！喜歡花生的千萬不要錯過。苦甜巧克力是老闆送的試吃，口味也是我的菜，巧克力搭配草莓超級好吃。下次再來吃巧克力！</p></div>
+                <div id="comments"><p>真材實料，非常濃郁的雪花冰，花生腰果吃得到顆粒，搭配輕盈的牛奶雪花冰非常的順口，比利時巧克力也是很濃郁，大推</p></div>
+                <div id="comments"><p>好吃，符合現代人健康的口味，不會太甜，新鮮水果做成，夏天來一碗很消暑，雖然貴一點，但真材實料！</p></div>
+            </div>
+        </div>
+        <div class="shop" id="show3" style="display: none;">
+            <img src="foodimg/強蛋餅店面.jpg" alt="" id="egg">
+            <h3>強蛋餅 4.3⭐</h3>
+            <div class="comment">
+                <div id="comments"><p>薯泥起司蛋餅咬下去很綿密，配上甜甜的醬油很搭！蚵仔起司雙蛋餅很特別</p></div>
+                <div id="comments"><p>花蓮必吃東大門美食，就是比一般蛋餅強，所以叫做強蛋餅；可以選擇單雙蛋口味，配料豐富多元，值得推薦嘗試。這次點雙蛋黃金泡菜，還不錯唷！</p></div>
+                <div id="comments"><p>非常好吃，蛋餅薄脆皮的口感會意猶未盡</p></div>
+                <div id="comments"><p>這次吃了鮮蚵起司塔香雙蛋蛋餅，還蠻好吃的。原本以為吃起來會跟蚵仔煎很像，結果其實不太像，這邊用的餅皮有一個特殊的香氣。</p></div>
+                <div id="comments"><p>原本想說蛋餅應該很一般，點了一份起司薯泥蛋餅，結果上桌後超級驚艷，怎麼可以那麼好吃，旁邊以為是鹹醬油膏，結果有點蜂蜜的風味，口感太多層次了，大推！</p></div>
+            </div>
+        </div>
+    </div>
+    <a href="home.html"><img id="topImg" src="twimg/nm logo.png" alt=""></a>
+    <footer>
+        <p class="footer_text">&copy;2022NM.All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

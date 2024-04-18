@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\css\mid.css">
+    <link rel="icon" href="twimg/nm logo.png">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-beta3-web/css/all.css">
+    <script src="../js/mid.js"></script>
+    <title>夜生活</title>
+</head>
+<body>
+    <div class="items">
+        <nav>
+            <ul class="menu">
+                <li><a href="north.html">北部</a></li>
+                <li><a href="mid.html">中部</a></li>
+                <li><a href="south.html">南部</a></li>
+                <li><a href="east.html">東部</a></li>
+                <li><a href="home.html#chart">精選小吃</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="popup" id="popup">
+        <h4>點擊食物,顯示商家資訊<br>雙擊食物,加入喜愛店家</h4>
+        <h5>祝您愉快^.- </h5>
+        <button onclick="CloseModal()">關閉</button>
+    </div>
+    <!--逢甲-->
+    <div class="nightmarket" id="fengchia">
+        <article>
+            <h2><i class="fa-solid fa-map-pin"></i> 逢甲夜市</h2>
+            <h3>地址</h3>
+            <p>407台中市西屯區文華路</p>
+            <h3>交通方式</h3> 
+            <p>（自行開車）國道3號-沙鹿交流道下-省道臺10線-省道臺1乙線-縣道127線-福星北路-福星路-逢甲路。<br>
+                國道1號-臺中交流道下-臺灣大道三段-黎明路三段-上安路-逢甲路。</p>
+            <p>（大眾運輸）搭臺鐵至臺中站下-轉搭臺中市公車25、35至逢甲大學站下。</p>
+        </article>
+        <aside><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14559.52195216805!2d120.645497!3d24.1759238!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf1a08e8dacfe639!2z6YCi55Sy5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1654934383821!5m2!1szh-TW!2stw" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></aside>
+    </div>
+    <div class="introduction">
+        <div class="food">
+            <div id="food1" onclick="one()"  ondblclick="heart1()"><img src="foodimg/小島遇見他.jpg"><img src="love.png" alt="" id="love1"></div>
+            <div id="food2" onclick="two()"  ondblclick="heart2()"><img src="foodimg/大麻粉圓.jpg" ><img src="love.png" alt="" id="love2"></div>
+            <div id="food3" onclick="thr()"  ondblclick="heart3()"><img src="foodimg/丹丹香蔥油餅.jpeg" ><img src="love.png" alt="" id="love3"></div>
+        </div>
+        <hr>
+        <div class="shop" id="show1" style="display: none;">
+            <img src="foodimg/小島遇見他.jpg" alt="">
+            <h3>小島遇見他 4.8⭐</h3>
+            <div class="comment">
+                <div id="comments"><p>超像自己家一样温馨，还有遇见你老板娘是最幸福呀！</p></div>
+                <div id="comments"><p>寵物友善餐廳 可頌塔類都好吃
+                    氣氛悠閒還有可愛狗勾</p></div>
+                <div id="comments"><p>店內的可頌及甜點都非常棒，今天點了一杯氣泡飲，悠閒的在店內逗留了好久。</p></div>
+                <div id="comments"><p>甜品精緻美味，老闆親切友善好相處，環境舒適放鬆，menu會一直更新，都會中值得來放鬆喝杯飲料的好地方</p></div>
+                <div id="comments"><p>有次路過逢甲想吃甜點買了可頌與蛋黃酥，發現蛋黃酥很不錯於是今年中秋公司送禮就選他們家！</p></div>
+            </div>
+        </div>
+        <div class="shop" id="show2" style="display: none;">
+            <img src="foodimg/大麻粉圓.jpg" alt="" id="bn">
+            <h3>大麻粉圓 4.1⭐</h3>
+            <div class="comment">
+                <div id="comments"><p>這家的粉圓吃起來完全不會假假的，很有嚼勁</p></div>
+                <div id="comments"><p>綜合粉圓（黑糖醬汁底）55，很甜有辣，冬天吃很舒服
+                    本來想點紅豆湯底，但是紅豆湯底是沒有紅豆的</p></div>
+                <div id="comments"><p>點了綜合粉圓，偶宜很Q粉圓好多有嚼勁，心不會硬很好吃</p></div>
+                <div id="comments"><p>大麻三寶 粉圓比較好吃。其他普通 芋圓湯圓都沒有Q感</p></div>
+                <div id="comments"><p>超大一碗，份量超多的，吃完很有飽足感，這次我叫正常冰正常甜，可能是太冰了，吃起來有點硬不過也是很好吃</p></div>
+            </div>
+        </div>
+        <div class="shop" id="show3" style="display: none;">
+            <img src="foodimg/丹丹香蔥油餅.jpeg" alt="" id="f">
+            <h3>丹丹香蔥油餅 4.3⭐</h3>
+            <div class="comment">
+                <div id="comments"><p>逢甲商圈排隊蔥油餅，看起來排很長，其實等待的時間還好</p></div>
+                <div id="comments"><p>這家的蔥油餅真的蠻厲害的沒有華麗的噱頭，以為吃起來會是很油一入口的麵粉香跟蔥油味道，一點都不油還讓人一口接一口，很快就變成以後的口袋美食名單了</p></div>
+                <div id="comments"><p>第一次排隊買，確實不油膩。有咬勁和麵皮餅香。</p></div>
+                <div id="comments"><p>很喜歡這種大片薄脆的蔥油餅，不管當點心或配電視的零食都很適合</p></div>
+                <div id="comments"><p>挑了一個馬告口味，但是吃不太出來。或許下次該嘗試傳統胡椒味就好。</p></div>
+            </div>
+        </div>
+    </div>
+    <!--旱溪-->
+    <div class="nightmarket" id="hanxi">
+        <article>
+            <h2><i class="fa-solid fa-map-pin"></i> 旱溪夜市</h2>
+            <h3>地址</h3>
+            <p>401台中市東區旱溪東路一段</p>
+            <h3>交通方式</h3> 
+            <p>（自行開車）<br>國道一號-大雅交流道下-環中路-右轉松竹路-右轉旱溪東路直行 <br>
+            國道三號-霧峰交流道下-快速道路74號-振興路下-直走旱溪西路一段-右轉振興路(東門橋)</p>
+            <p>（大眾運輸）搭乘台鐵至台中火車站-89號公車-「旱溪東振興路口」下車</p>
+        </article>
+        <aside><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3641.096801374286!2d120.69813071482311!3d24.133238384402038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d37ef3ca3a9%3A0xf8e65948d893a983!2z5pex5rqq5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1654934419626!5m2!1szh-TW!2stw" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></aside>
+    </div>
+    <div class="introduction">
+        <div class="food">
+            <div id="food1" onclick="one1()"  ondblclick="heart4()"><img src="foodimg/黎品豆乳雞.jpg"><img src="love.png" alt="" id="love4"></div>
+            <div id="food2" onclick="two1()"  ondblclick="heart5()"><img src="foodimg/吉拿棒.jpg" ><img src="love.png" alt="" id="love5"></div>
+            <div id="food3" onclick="thr1()"  ondblclick="heart6()"><img src="foodimg/蒜香豆干.jpg" ><img src="love.png" alt="" id="love6"></div>
+        </div>
+        <hr>
+        <div class="shop" id="show4" style="display: none;">
+            <img src="foodimg/黎品豆乳雞.jpg" alt="">
+            <h3>黎品豆乳雞 4.3⭐</h3>
+            <div class="comment">
+                <div id="comments"><p>雞翅及雞腳必吃，尤其熱熱吃入口，酥脆入味好吃</p></div>
+                <div id="comments"><p>咬下去的第一口就讓我驚艷到不行的豆乳雞！所有的東西都是現炸的，大推雞翅跟雞屁股，外皮酥脆，肉吃多汁，卻一點也不油膩，邊走邊啃他們家的雞翅真的是一大享受啊</p></div>
+                <div id="comments"><p>身為炸雞愛好者，上次路過看到在排隊好奇買了一包無骨雞塊跟雞皮、雞翅品嚐看看，超香超好吃～
+                    目前已經是我跟家人心中的第一名炸雞店！</p></div>
+                <div id="comments"><p>好好吃的雞翅，雞翅的皮沾了豆乳肉又超～啾吸⋯加上特製的胡椒粉真的太好吃了</p></div>
+                <div id="comments"><p>雞翅的外皮很酥脆，咬開馬上就有豆乳香在口腔裡迴繞，香醇的味道非常吸引熊；甘甜的豆乳香滲入肉中，一口咬下就刺激著味蕾，雖然是炸物卻表現的一點也不油膩。</p></div>
+            </div>
+        </div>
+        <div class="shop" id="show5" style="display: none;">
+            <img src="foodimg/吉拿棒.jpg" alt="" id="bn">
+            <h3>油吉條Circhurros 5.0⭐</h3>
+            <div class="comment">
+                <div id="comments"><p>酥脆好吃～灑上花生粉，趁熱吃！是個罪惡又好吃療癒的食物</p></div>
+                <div id="comments"><p>一定要趁熱咬幾口。酥酥脆脆的很好吃</p></div>
+                <div id="comments"><p>通常以為都會很甜膩，沒想到很好吃口感也很Q 一點不會甜 吃起來非常順口</p></div>
+                <div id="comments"><p>很好吃，是我近期內吃過最好吃的吉拿棒，老闆們態度很好，服務熱誠真的很不錯</p></div>
+                <div id="comments"><p>旱溪夜市人氣很好的一家，用歐美傳統方法製作的吉拿棒，以螺旋圓圈狀在油鍋酥炸至，共有9種口味搭配5種淋醬，可以自行選擇搭配，鹹甜都有超級特別的！</p></div>
+            </div>
+        </div>
+        <div class="shop" id="show6" style="display: none;">
+            <img src="foodimg/蒜香豆干.jpg" alt="" id="f">
+            <h3>方臉師傅蒜香豆干 4.4⭐</h3>
+            <div class="comment">
+                <div id="comments"><p>豆乾軟嫩又入味實在太好吃了。ㄧ外帶回家馬上秒殺，買太少了吃完還想再吃</p></div>
+                <div id="comments"><p>蒜味頗重，但豆干其實不太入味。</p></div>
+                <div id="comments"><p>出乎意外的好吃！豆干軟嫩，醬汁味道夠不死鹹 尤其看到淋了一大匙的特調醬汁特別爽！！</p></div>
+                <div id="comments"><p>看的出來豆干滷的超級透,裡面充滿氣孔,吸飽醬汁,配上特製蒜醬,再撒上一把葱花,完美呀.來一碗白飯配著吃真讚</p></div>
+                <div id="comments"><p>豆干滷得相當入味，調味的蔥、蒜香氣十足，與醬汁完美結合，旱溪夜市必排美食</p></div>
+            </div>
+        </div>
+    </div>
+    <!--精誠-->
+    <div class="nightmarket" id="jingcheng">
+        <article>
+            <h2><i class="fa-solid fa-map-pin"></i> 精誠夜市</h2>
+            <h3>地址</h3>
+            <p>500彰化縣彰化市林森路162號</p>
+            <h3>交通方式</h3> 
+            <p>（自行開車）國道一號-彰化交流道下-中華西路-平安街-林森路</p><br>
+            <p>（大眾運輸）搭台鐵至彰化車站-至7-11前換騎ubike-往左直騎-</p>
+        </article>
+        <aside><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3642.842711300928!2d120.52463041482183!3d24.071842884431906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3469477f5a1dca05%3A0xed23edc0bfa0e7c7!2z57K-6Kqg5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1654934459437!5m2!1szh-TW!2stw" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></aside>
+    </div>
+    <div class="introduction">
+        <div class="food">
+            <div id="food1" onclick="one2()"  ondblclick="heart7()"><img src="foodimg/鴨肉羹.jpeg"><img src="love.png" alt="" id="love7"></div>
+            <div id="food2" onclick="two2()"  ondblclick="heart8()"><img src="foodimg/地瓜球.jpg" ><img src="love.png" alt="" id="love8"></div>
+            <div id="food3" onclick="thr2()"  ondblclick="heart9()"><img src="foodimg/初蟬茶舍.jpg" ><img src="love.png" alt="" id="love9"></div>
+        </div>
+        <hr>
+        <div class="shop" id="show7" style="display: none;">
+            <img src="foodimg/鴨肉羹.jpeg" alt="">
+            <h3>生炒鴨肉羹</h3>
+            <div class="comment">
+                <div id="comments"><p>生炒鴨肉羹麵鴨肉不會很柴，用大火炒過的洋蔥當配料，讓湯頭有大鍋味，而且非常甜香，麵條也吸滿湯汁，很讓人讚嘆！</p></div>
+                <div id="comments"><p>陣陣濃郁鴨香撲鼻而來，走近一看才發現，原來就是鼎鼎大名的「生炒鴨肉羹」！現場大火快炒的美味鴨肉，嘗起來軟嫩Q彈，完全不會太過生硬，更貼心地除去骨頭，非常容易入口。</p></div>
+                <div id="comments"><p>這攤生炒鴨肉羹不僅僅在彰化精誠夜市出沒，連台鳳夜市也有其蹤跡，這攤的鴨肉羹最大的特色是每一口都能吃到濃濃的鴨肉香氣，令人印象深刻～</p></div>
+                <div id="comments"><p>湯看起來很清，喝起來卻非常有滋有味，明明已經肚子很飽了，還是舔到碗底乾乾淨淨。</p></div>
+                <div id="comments"><p>服務人員很多，所以上餐動作很快，餐點到齊之後收錢，收拾碗盤的速度也很快。</p></div>
+            </div>
+        </div>
+        <div class="shop" id="show8" style="display: none;">
+            <img src="foodimg/地瓜球.jpg" alt="" id="bn">
+            <h3>祥旺地瓜球 4.2⭐</h3>
+            <div class="comment">
+                <div id="comments"><p>剛炸好香氣十足，口感很Q 酥脆不油膩，非常涮口。就算放涼也不會硬掉，還是外酥內軟帶有嚼勁，一人買20元就很夠吃了</p></div>
+                <div id="comments"><p>小份的一個人很足夠，炸的很透很酥，放涼了仍好吃</p></div>
+                <div id="comments"><p>價位從20~50元都有，看老闆製作過程療癒非常，炸的金黃酥脆，吃起來不會很油，裡面空心的，最喜歡愛這樣的地瓜球</p></div>
+                <div id="comments"><p>地瓜球很有彈性且甜度適中</p></div>
+                <div id="comments"><p>這家地瓜球體型小小圓圓的外型小巧可愛，外皮蠻酥脆是夠空心的地瓜球不是扎實包餡那種，從以前一包10元吃到現在20元還是覺得銅板價</p></div>
+            </div>
+        </div>
+        <div class="shop" id="show9" style="display: none;">
+            <img src="foodimg/初蟬茶舍.jpg" alt="" id="f">
+            <h3>初禪茶社 5.0⭐</h3>
+            <div class="comment">
+                <div id="comments"><p>買了杯無糖紅茶，從此成為這間手搖飲品的忠實粉絲。價錢平易近人但是茶的品質一點也不馬虎！</p></div>
+                <div id="comments"><p>無糖的紅茶喝起來不澀不咬舌充滿清新的茶香。</p></div>
+                <div id="comments"><p>回到家插入吸管只覺得花香四溢，喝到一半打開封膜一看！！難怪店員說茉莉綠茶要看季節，因為杯子裡滿滿的茉莉花！</p></div>
+                <div id="comments"><p>夜市攤子沉穩木質色調給人來到茶園的感覺</p></div>
+                <div id="comments"><p>也許我品茶的年資沒甚麼資格評論太多，但是喝過坊間那麼多大大小小連鎖茶飲文青店鋪，這家真的是我喝過最好喝又實惠的茉莉綠茶。</p></div>
+            </div>
+        </div>
+    </div>
+    <a href="home.html"><img id="topImg" src="twimg/nm logo.png" alt=""></a>
+    <footer>
+        <p class="footer_text">&copy;2022NM.All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

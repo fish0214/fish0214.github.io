@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="..\css\south.css">
+    <link rel="icon" href="twimg/nm logo.png">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-beta3-web/css/all.css">
+    <script src="../js/south.js"></script>
+    <title>夜生活</title>
+</head>
+
+<body>
+    <div class="items">
+        <nav>
+            <ul class="menu">
+                <li><a href="north.html">北部</a></li>
+                <li><a href="mid.html">中部</a></li>
+                <li><a href="south.html">南部</a></li>
+                <li><a href="east.html">東部</a></li>
+                <li><a href="home.html#chart">精選小吃</a></li>
+            </ul>
+        </nav>
+    </div>
+        <div class="popup" id="popup">
+            <h4>點擊食物,顯示商家資訊<br>雙擊食物,加入喜愛店家</h4>
+            <h5>祝您愉快^.- </h5>
+            <button onclick="CloseModal()">關閉</button>
+        </div>
+
+        
+    <!--花園-->
+    <div class="nightmarket" id="garden">
+        <article>
+            <h2><i class="fa-solid fa-map-pin"></i> 花園夜市</h2>
+            <h3>地址</h3>
+            <p>（自行開車）<br>中山高速公路永康交流道下→往台南市方向→沿中正北路→中正南路→至西門路四段與和緯路交接口→右轉沿和緯路至海安路三段交叉口→即可看見花園夜市。</p>
+            <p>（大眾運輸）<br>火車前站→國賓黑色大樓底下的公車北站→搭乘「0左路」市公車→臨安海安路口站下車→往回走左轉海安路往北<br>
+                公車北站搭乘「3路」(往海東國小)→在特力屋站(文賢路上)下車→往回走左轉和緯路東行<br> 台南市公車「0左路」及「0右路」市公車每週六日晚間時刻加繞花園夜市並停靠上下車。</p>
+        </article>
+        <aside><iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14689.380528473926!2d120.2003203!3d23.0110967!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa2380aab1510d45c!2z5Y-w5Y2X6Iqx5ZyS5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1654937531149!5m2!1szh-TW!2stw"
+                width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></aside>
+    </div>
+    <div class="introduction">
+        <div class="food">
+            <div id="food1" onclick="one()" ondblclick="heart1()"><img src="foodimg/二師兄滷味.jpg"><img src="love.png" alt="" id="love1"></div>
+            <div id="food2" onclick="two()" ondblclick="heart2()"><img src="foodimg/臭豆腐.jpg"><img src="love.png" alt="" id="love2"></div>
+            <div id="food3" onclick="thr()" ondblclick="heart3()"><img src="foodimg/紅妃大腸香腸.jpg"><img src="love.png" alt="" id="love3"></div>
+        </div>
+        <hr>
+        <div class="shop" id="show1" style="display: none;">
+            <img src="foodimg/二師兄滷味.jpg" alt="">
+            <h3>二師兄古早味滷味 3⭐</h3>
+            <div class="comment">
+                <div id="comments">
+                    <p>超級厲害的米血。念念不忘。每次來台南CP值高的滷味攤。</p>
+                </div>
+                <div id="comments">
+                    <p>最喜歡古早味米血與豆乾，鳥蛋味道很像鐵蛋。(很回甘的口味) 人潮雖然很多但這家真的口味不一樣(有點像東山鴨頭或是蜜汁燒烤)</p>
+                </div>
+                <div id="comments">
+                    <p>有麻油香的滷味，要排隊等一陣子，所以要挑對排隊的隊伍，每次都覺得買太少～</p>
+                </div>
+                <div id="comments">
+                    <p>來台南必買！！每一樣都超好吃，只可惜排隊等很久，建議發號碼牌吧😅</p>
+                </div>
+                <div id="comments">
+                    <p>雞心非常入味，後來就只點雞心+鳥蛋也很棒！目前吃過滷鳥蛋心中第一名</p>
+                </div>
+            </div>
+        </div>
+        <div class="shop" id="show2" style="display: none;">
+            <img src="foodimg/臭豆腐.jpg" alt="">
+            <h3>京典酵素臭豆腐 4.2⭐</h3>
+            <div class="comment">
+                <div id="comments">
+                    <p>外皮炸的非常酥脆，醬料調的適中，泡菜好吃到多叫一盤，辣椒給的有點少，因為我吃重辣，外皮有灑些許胡椒，整體而言，是我排名算前幾的臭豆腐。</p>
+                </div>
+                <div id="comments">
+                    <p>喜歡炸臭豆腐，別於一般，是特別酥脆口感</p>
+                </div>
+                <div id="comments">
+                    <p>外皮酥脆、豆腐不乾，一口咬下(不加醬料)，椒鹽香伴隨酥脆外皮的口感在嘴巴裡蔓延開，醬料不死鹹，趁熱吃有一種不錯的快感</p>
+                </div>
+                <div id="comments">
+                    <p>米其林等級的好吃😋臭豆腐，無敵酥脆口感，內鬆軟、噴汁，搭配胡椒+酸菜，讓不吃臭豆腐的我，也一吃上癮👍</p>
+                </div>
+                <div id="comments">
+                    <p>炸的酥脆的臭豆腐，香香脆脆口感很好，搭配的泡菜也是爽口清脆，值得一試！</p>
+                </div>
+            </div>
+        </div>
+        <div class="shop" id="show3" style="display: none;">
+            <img src="foodimg/紅妃大腸香腸.jpg" alt="">
+            <h3>紅妃大腸香腸</h3>
+            <div class="comment">
+                <div id="comments">
+                    <p>香腸炒過後因為醬汁帶著甜香讓香腸變得更有味道，而且肥瘦的比例剛剛好完全不乾柴，大腸炒後熟度剛剛好口感相當Ｑ彈，而且米腸的糯米香味還有花生的香度都有出來，而且大腸和香腸都帶著九層塔得香氣會讓人想要秒殺。
+                    </p>
+                </div>
+                <div id="comments">
+                    <p>基本上原本還沒加配料的的大腸小腸，蠻有九層塔味的，因為就是用九層塔下去炒香的。配料蘿蔔絲還蠻特別的，口感也是脆脆的帶點甜，還不錯吃就是了。</p>
+                </div>
+                <div id="comments">
+                    <p>一般大腸包小腸都是用炭火烤，可是他們是採用鐵盤煎烤再切塊的方式在炒，大腸還用九層塔拌炒，多了一些九層塔香氣，好吃。</p>
+                </div>
+                <div id="comments">
+                    <p>一口蒜片、一口香腸配上淡淡的九層塔香，美味一層又一層的堆疊，讓人流連忘返，不知不覺就把這一整盒給吃完了！平常的大腸包小腸是一整份拿起來吃，這家卻很貼心的切成一片又一片，不僅好入口，也比較不會把手給弄髒～
+                    </p>
+                </div>
+                <div id="comments">
+                    <p>雖然作法不同，但是依然是鮮嫩多汁，而且還多了一股九層塔香氣，如果你也愛吃這一味，那千萬別錯過</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--六合-->
+    <div class="nightmarket" id="six">
+        <article>
+            <h2><i class="fa-solid fa-map-pin"></i> 六合夜市</h2>
+            <h3>地址</h3>
+            <p>800高雄市新興區六合二路</p>
+            <h3>交通方式</h3>
+            <p>（自行開車）從中山高(國道1號)中正交流道下，順中正一、二、三路走，至中山路左轉，接六合路即可抵達。</p><br>
+            <p>（大眾運輸）公車：搭乘12、52、60、69、72、92、100、218、248、301至大港埔(中山一路)站下。左轉步行約3、4分鐘即可到達。<br>捷運：搭乘高雄捷運紅線，於「美麗島站」下車。步行約5分鐘可達。
+            </p>
+        </article>
+        <aside><iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14730.328373845692!2d120.2991547!3d22.6320758!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd3e6e842bfa0ecfd!2z5YWt5ZCI5aSc5biCL-WFreWQiOingOWFieWknOW4gg!5e0!3m2!1szh-TW!2stw!4v1654939468276!5m2!1szh-TW!2stw"
+                width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></aside>
+    </div>
+    <div class="introduction">
+        <div class="food">
+            <div id="food1" onclick="one1()" ondblclick="heart4()"><img src="foodimg/鱔魚姐鱔魚麵.jpg"><img src="love.png" alt="" id="love4"></div>
+            <div id="food2" onclick="two1()" ondblclick="heart5()"><img src="foodimg/莊記海產粥.jpg"><img src="love.png" alt="" id="love5"></div>
+            <div id="food3" onclick="thr1()" ondblclick="heart6()"><img src="foodimg/王牌豆花.jpg"><img src="love.png" alt="" id="love6"></div>
+        </div>
+        <hr>
+        <div class="shop" id="show4" style="display: none;">
+            <img src="foodimg/鱔魚姐鱔魚麵.jpg" alt="">
+            <h3>鱔魚姐鱔魚麵 4.0⭐</h3>
+            <div class="comment" id="fish">
+                <div id="comments">
+                    <p>鱔魚意麵實在是太好吃了啊！！一點點勾芡，意麵量很多，口味甜甜的，是回家後一定會想念的好滋味～～～</p>
+                </div>
+                <div id="comments">
+                    <p>六合夜市鱔魚姐店家用料很大方，花枝份量多，酸辣味佳，價錢公道。</p>
+                </div>
+                <div id="comments">
+                    <p>個人覺得是來六合夜市必吃的小吃，雖然鱔魚看起來蠻恐怖的但真的是蠻好吃的，鱔魚麵本身沒太多的配料，但整體吃起來又香又入味，炒功了得，值得一吃囉！</p>
+                </div>
+                <div id="comments">
+                    <p>乾炒鱔魚每來必點。超讚!!!!</p>
+                </div>
+                <div id="comments">
+                    <p>乾炒的鱔魚意麵超級好吃</p>
+                </div>
+            </div>
+        </div>
+        <div class="shop" id="show5" style="display: none;">
+            <img src="foodimg/莊記海產粥.jpg" alt="">
+            <h3>莊記海產粥、鹽蒸蝦、鹹湯圓 3.8⭐</h3>
+            <div class="comment">
+                <div id="comments">
+                    <p>好吃的海產粥，海鮮意外的新鮮。但如果衛生條件再好一點會更好，畢竟在六合夜市裡是不錯的吃的地方。上一次外帶一直很想念的滋味，這次又來訪了，真的還是一樣好吃</p>
+                </div>
+                <div id="comments">
+                    <p>上一次外帶一直很想念的滋味，這次又來訪了，真的還是一樣好吃攤位檯面上的海鮮都非常新鮮，有蚵仔、花枝、蟹肉、蛤蜊、蝦子。鮮甜的湯頭有筍絲、油蔥酥、芹菜、蔥花提味，蝦肉彈牙、花枝鮮脆、蟹肉鮮嫩、蛤蜊和蚵仔肥美，搭配飯粒，整碗還不錯吃！以現在的物價，海產粥這樣的料，個人覺的OK！沒吃過的可以來吃看看，晚上涼涼的天氣，很適合來一碗！
+                    </p>
+                </div>
+                <div id="comments">
+                    <p>攤位檯面上的海鮮都非常新鮮，有蚵仔、花枝、蟹肉、蛤蜊、蝦子。鮮甜的湯頭有筍絲、油蔥酥、芹菜、蔥花提味，蝦肉彈牙、花枝鮮脆、蟹肉鮮嫩、蛤蜊和蚵仔肥美，搭配飯粒，整碗還不錯吃！以現在的物價，海產粥這樣的料，個人覺的OK！沒吃過的可以來吃看看，晚上涼涼的天氣，很適合來一碗！一碗120元，內有許多海鮮，新鮮不腥。湯頭鮮甜，不雷，可吃👌🏻
+                    </p>
+                </div>
+                <div id="comments">
+                    <p>一碗120元，內有許多海鮮，新鮮不腥。湯頭鮮甜，不雷，可吃👌🏻料多實在，南部的類似泡飯的粥</p>
+                </div>
+                <div id="comments">
+                    <p>料很多，海鮮新鮮，份量不多，湯頭有蒜酥、芹菜、香菜提味許多料很多，海鮮新鮮，份量不多，湯頭有蒜酥、芹菜、香菜提味許多</p>
+                </div>
+            </div>
+        </div>
+        <div class="shop" id="show6" style="display: none;">
+            <img src="foodimg/王牌豆花.jpg" alt="">
+            <h3>王牌豆花 4.0⭐</h3>
+            <div class="comment">
+                <div id="comments">
+                    <p>招牌綜合豆花份（中）$50量不大但味道很好料很多，豆花本身很道地，配上有嚼勁的小珍珠搭配顆粒分明的紅綠豆和薏仁還有很香的花生，很加分的是糖水甜度剛好，不像很多冰店都過甜</p>
+                </div>
+                <div id="comments">
+                    <p>豆花很綿嫩，有豆花味，花生煮的剛好不會硬，紅豆也是不硬還很沙，糖水甜度剛好，不甜膩，雖然小杯但說真的35元CP值算不錯，不會像其它家的吃完都剩一堆糖水。</p>
+                </div>
+                <div id="comments">
+                    <p>豆花綿密入口即化，位於六合夜市內，傳統古早味，用料實在，價錢不貴，觀光夜市就是要有這生意實在的店家，替台灣爭光推薦</p>
+                </div>
+                <div id="comments">
+                    <p>豆花很綿密，薏仁味道很好。吃完馬上想再來一碗</p>
+                </div>
+                <div id="comments">
+                    <p>咖啡牛奶超好喝！全高雄我只喝他們家的咖啡牛奶</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--墾丁大街-->
+    <div class="nightmarket" id="kenting">
+        <article>
+            <h2><i class="fa-solid fa-map-pin"></i> 墾丁大街夜市</h2>
+            <h3>地址</h3>
+            <p>946屏東縣恆春鎮墾丁路</p>
+            <h3>交通方式</h3>
+            <p>（自行開車）國道1號：五甲系統出口 (台88線 出口) 下交流道→接台88線→竹田系統出口→國道3號→187乙縣道→台1線(屏鵝公路)→台26線→抵達墾丁大街。<br>
+                國道3號：南州出口下交流道→187乙縣道→台1線(屏鵝公路)→台26線→抵達墾丁大街。</p><br>
+            <p>（大眾運輸）高鐵：搭乘至左營站後，轉乘客運（墾丁快線、國光客運88快速、墾丁列車）。</p>
+        </article>
+        <aside><iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14802.817546092421!2d120.7966292!3d21.9459131!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3019daff73e05a5a!2z5aK-5LiB5aSn6KGX5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1654941479145!5m2!1szh-TW!2stw"
+                width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe></aside>
+    </div>
+    <div class="introduction">
+        <div class="food">
+            <div id="food1" onclick="one2()" ondblclick="heart7()"><img src="foodimg/波波窯烤手工披薩.jpg"><img src="love.png" alt="" id="love7"></div>
+            <div id="food2" onclick="two2()" ondblclick="heart8()"><img src="foodimg/馬的吧子.jpg"><img src="love.png" alt="" id="love8"></div>
+            <div id="food3" onclick="thr2()" ondblclick="heart9()"><img src="foodimg/六少爺海鮮燒烤.jpg"><img src="love.png" alt="" id="love9"></div>
+        </div>
+        <hr>
+        <div class="shop" id="show7" style="display: none;">
+            <img src="foodimg/波波窯烤手工披薩.jpg" alt="">
+            <h3>波波窯烤手工披薩 3.9⭐</h3>
+            <div class="comment">
+                <div id="comments">
+                    <p>買了無數次，這次要給新團隊打氣加油，今天買了 海鮮及夏威夷各一個，餡料變多了，口感更酥脆。掌櫃的人是一位帥哥，態度親切，希望你能持續堅持服務理念，老顧客才會持續相挺。</p>
+                </div>
+                <div id="comments">
+                    <p>辣牛肉pizza 很好吃❤️夠辣夠味！可選擇加香菜或不加香菜，很特別！我們有一個朋友不吃香菜，雖然上菜的時候滿滿香菜，但是很好移開🤪薄皮的pizza 料滿滿！</p>
+                </div>
+                <div id="comments">
+                    <p>窯爐中木頭燒烤的香流轉到薄餅皮帶點微微焦香、搭上底層番茄糊不死鹹又不僵化、配上一點點橄欖、義式香料與黑胡椒、高品質的乳酪絲、丁狀的海鮮、一點點洋蔥絲搭在一起非常好吃，星空下的沙灘夜景、配酒配pizza，很美好的享受😎夏威夷口味的培根煙燻味是獨門口味也是恰到好處
+                    </p>
+                </div>
+                <div id="comments">
+                    <p>又變好吃了！照片其中一張是之前的，最近又變好吃服務也超親切</p>
+                </div>
+                <div id="comments">
+                    <p>無敵霹靂好吃～每次來都要吃不同口味！現烤現吃真的很美味！！這次吃的是海鮮口味～</p>
+                </div>
+            </div>
+        </div>
+        <div class="shop" id="show8" style="display: none;">
+            <img src="foodimg/馬的吧子.jpg" alt="">
+            <h3>馬的吧子 4.7⭐</h3>
+            <div class="comment">
+                <div id="comments">
+                    <p>第一次在大馬路上喝酒，酒的口味普通（精緻度沒辦法跟酒吧比）但老闆很熱心，大聲的搖滾樂讓整體氣氛不錯，算是很特別的體驗～</p>
+                </div>
+                <div id="comments">
+                    <p>老闆的調酒真的很好喝，每次都沒有讓人失望，馬的隨便老闆加也是很讚，靠實力在經營的</p>
+                </div>
+                <div id="comments">
+                    <p>老闆會和你討論喝酒的習慣，給你適合的飲用建議不用擔心不知道的基酒或內容，舒服的氛圍，和輕鬆的聊天對話，時不時招待的一些shots，真的太chill了！</p>
+                </div>
+                <div id="comments">
+                    <p>每次來墾丁都要喝酒才對味，在凱撒對面而已，喝醉還可以馬上回去，而且老闆娘跟老闆很親切，推薦大家去喝看看。</p>
+                </div>
+                <div id="comments">
+                    <p>老闆很周到，第一杯"隨便"調好還會向客人確認口味，確認會不會太酸或太甜，老闆娘會關心客人是否喝太醉，適時給予白開水暫緩，很棒的一家店！</p>
+                </div>
+            </div>
+        </div>
+        <div class="shop" id="show9" style="display: none;">
+            <img src="foodimg/六少爺海鮮燒烤.jpg" alt="">
+            <h3>六少爺海鮮燒烤 3.7⭐</h3>
+            <div class="comment">
+                <div id="comments">
+                    <p>每次來墾丁大街都會做好被攤販、店家坑的心理準備，但意外地這家烤生蚵品質很👍🏻👍🏻大顆肥美也不會烤過熟，我們兩人吃了3盤～～不過也只有點這3盤，下次有機會再試試其他菜。希望下次去品質能維持一樣好
+                    </p>
+                </div>
+                <div id="comments">
+                    <p>來墾丁大街必吃六少爺，因為買很多小吃，點了一些重點美食，可生蠔
+                        、奶油蛤蠣、烤台灣鯛魚，生蠔肥美又大顆；奶油蛤蠣湯的精華湯很鮮，但也別喝太多有點鹹😂，鯛魚鹽烤的肉質鮮甜很好的吃很新鮮，等待時間大概15～20分鐘，價位其實還算合理價位，但是好吃就值得了，附上魚缸裡的店家寵物，好大隻魚仔。
+                    </p>
+                </div>
+                <div id="comments">
+                    <p>好吃！連鹹豬肉都很好吃，水蓮很嫩不老，蝦子蝦黃多，蛤蠣新鮮！</p>
+                </div>
+                <div id="comments">
+                    <p>海鮮品質相當令人驚艷，沒想到在遊樂區的餐廳能有如此表現，出餐速度也快，價格也合理，是值得推薦的墾丁大街餐廳</p>
+                </div>
+                <div id="comments">
+                    <p>櫻花蝦炒飯超級棒 ！胡椒蝦也很新鮮！原本以為是遊客居多的餐廳， 能開這麼大還是有一定水準的 ！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="home.html"><img id="topImg" src="twimg/nm logo.png" alt=""></a>
+    <footer>
+        <p class="footer_text">&copy;2022NM.All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

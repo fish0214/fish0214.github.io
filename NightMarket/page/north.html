@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/north.css">
+    <link rel="icon" href="twimg/nm logo.png">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-beta3-web/css/all.css">
+    <script src="../js/north.js"></script>
+    <title>夜生活</title>
+
+</head>
+<body>
+    <div class="items">
+        <nav>
+            <ul class="menu">
+                <li><a href="north.html">北部</a></li>
+                <li><a href="mid.html">中部</a></li>
+                <li><a href="south.html">南部</a></li>
+                <li><a href="east.html">東部</a></li>
+                <li><a href="home.html #chart">精選小吃</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="popup" id="popup">
+        <h4>點擊食物,顯示商家資訊<br>雙擊食物,加入喜愛店家</h4>
+        <h5>祝您愉快^.- </h5>
+        <button onclick="CloseModal()">關閉</button>
+    </div>
+    <!--饒河-->
+    <div class="nightmarket" id="river">
+        <article>
+            <h2><i class="fa-solid fa-map-pin"></i> 饒河夜市</h2>
+            <h3>地址</h3>
+            <p>105台北市松山區饒河街</p>
+            <h3>交通方式</h3> 
+            <p>（自行開車）<br>國道1號-堤頂交流道下-堤頂大道一段-南京東路六段-新明路298巷-成美橋-南港路三段-八德路四段。<br>
+            國道1號-臺中交流道下-臺灣大道三段-黎明路三段-上安路-逢甲路。</p>
+            <p>（大眾運輸）<br>搭乘臺鐵至松山站下。<br>搭乘臺北捷運至松山站下。</p>
+        </article>
+        <aside><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14458.00977384945!2d121.5775254!3d25.0509541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3da21183815df6f6!2z6aWS5rKz6KGX6KeA5YWJ5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1654621811900!5m2!1szh-TW!2stw" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></aside>
+    </div>
+    <div class="introduction">
+        <div class="food">
+            <div id="food1" onclick="one()" ondblclick="heart1()"><img src="foodimg/麻糬寶寶.jpg"><img src="love.png" alt="" id="love1"></div>
+            <div id="food2" onclick="two()"  ondblclick="heart2()"><img src="foodimg/紅燒牛肉麵.jpg" ><img src="love.png" alt="" id="love2"> </div>
+            <div id="food3" onclick="thr()"  ondblclick="heart3()"><img src="foodimg/魷魚.jpg" ><img src="love.png" alt="" id="love3"></div>
+        </div>
+        <hr>
+        <div class="shop" id="show1" style="display: none;">
+            <img src="shopimg/麻糬寶寶店面.png" alt="">
+            <h3>麻糬寶寶 4.7⭐</h3>
+            <div class="comment">
+                <div id="comments"><p>曾經入選2020米其林名單，口感軟硬適中，沾上花生粉更是加分，一口一個越吃越順口。</p></div>
+                <div id="comments"><p>麻糬要特別好吃本來就有難度，不過這一間的皮算是很軟，彈性好。</p></div>
+                <div id="comments"><p>已經好久好久沒有吃到這麼好吃的傳統麻糬了，我還以為離開了客家莊的老家就再也吃不到了，以後有經過一定再去買！老闆很親切！</p></div>
+                <div id="comments"><p>老闆超級親切！麻薯也好吃，外面包花生粉，裡面包糖粉，味道對我來說很剛好，小份的分量也不會太少</p></div>
+                <div id="comments"><p>屬於最傳統不包餡的客家麻糬，老闆麻糬糯米處理得宜黏度適中，外圍沾附香而不甜的花生粉，內含適度的芝麻糖粉，讓麻糬整體吃起來Q香不膩口。</p></div>
+            </div>
+        </div>
+        <div class="shop" id="show2" style="display: none;">
+            <img src="shopimg/紅燒牛肉麵店面.jpg" alt="" id="bn">
+            <h3>紅燒牛肉麵牛雜湯 米其林必比登美食</h3>
+            <div class="comment">
+                <div id="comments"><p>店面欠牌匾，須認明牛頭圖樣。牛雜湯口感豐富。乾拌麵以肉燥搭配醬油膏，滋味讓人無法忘懷。</p></div>
+                <div id="comments"><p>牛雜湯牛雜份量不少，大概有半碗，包含牛肚、牛腸、牛筋等好料。它的湯頭香濃不腥，應該是真材實料熬出來的。</p></div>
+                <div id="comments"><p>牛筋滑彈軟嫩，牛雜吃起來脆彈沒有腥味。</p></div>
+                <div id="comments"><p>乾拌麵份量算蠻大的，澆上有肉末的肉燥，吃起來很實在，肉燥有香，是簡單的美味。麻醬還有濃厚的焦香氣！</p></div>
+                <div id="comments"><p>這攤的小菜點了之後會放進熱湯中煮一下再拿出來切，客人吃到的是溫熱的口感，尤其大推花干，溫熱又吸飽湯汁，比起絕大多數店家冷冷的花干強！</p></div>
+            </div>
+        </div>
+        <div class="shop" id="show3" style="display: none;">
+            <img src="shopimg/魷魚.jpg" alt="" id="f">
+            <h3>加賀魷魚大王 4.1⭐</h3>
+            <div class="comment">
+                <div id="comments"><p>魷魚好吃Q彈又脆，蒜味+醬汁屬於重口味，如果敢吃辣的話，強烈建議一定要加，味道會更有層次。</p></div>
+                <div id="comments"><p>好吃~味道很可以~不會死鹹油膩。</p></div>
+                <div id="comments"><p>特製辣醬，味道不錯，二樓有內用區域，有阿姨一直清理，也有提供廁所，雖然是舊式廁所，但是很乾淨很香，也有提供衛生紙跟酒精，用心100分。</p></div>
+                <div id="comments"><p>魷魚很新鮮脆度很夠，醬汁有加九層塔調味的剛剛好，好吃到很想配飯吃！</p></div>
+                <div id="comments"><p>饒河夜市必吃美食之一，加賀魷魚大王，肥美的魷魚身片拌上沙茶蒜味醬汁，再加上九層塔提味，讓魷魚增添風味。</p></div>
+            </div>
+        </div>
+    </div>
+    <!--士林-->
+    <div class="nightmarket" id="shilin">
+        <article>
+            <h2><i class="fa-solid fa-map-pin"></i> 士林夜市</h2>
+            <h3>地址</h3>
+            <p>臺北市士林區大東路、大南路、文林路、基河路</p>
+            <h3>交通方式</h3> 
+            <p>（自行開車）<br>國道1號-臺北交流道下-重慶北路四段-百齡橋-中正路-基河路。<br>
+            國道1號-臺中交流道下-臺灣大道三段-黎明路三段-上安路-逢甲路。</p>
+            <p>（大眾運輸）<br>搭高鐵或臺鐵至臺北站下-轉搭臺北捷運至劍潭站下。<br>搭臺北市雙層觀光巴士藍線至捷運劍潭站下。</p>
+        </article>
+        <aside><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14453.639056268321!2d121.5242024!3d25.0879869!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe7c26dbe86e7f929!2z5aOr5p6X5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1654719164320!5m2!1szh-TW!2stw" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></aside>
+    </div>
+    <div class="introduction">
+        <div class="food">
+            <div id="food1" onclick="one1()"  ondblclick="heart4()"><img src="foodimg/chicken steak.jpg"><img src="love.png" alt="" id="love4"></div>
+            <div id="food2" onclick="two1()"  ondblclick="heart5()"><img src="foodimg/阿輝麵線.jpg" ><img src="love.png" alt="" id="love5"></div>
+            <div id="food3" onclick="thr1()"  ondblclick="heart6()"><img src="foodimg/涼麵.jpg" ><img src="love.png" alt="" id="love6"></div>
+        </div>
+        <hr>
+        <div class="shop" id="show4" style="display: none;">
+            <img src="shopimg/雞排.jpg" alt="" id="ck">
+            <h3>豪大大雞排 3.4⭐</h3>
+            <div class="comment">
+                <div id="comments"><p>以傳統雞排店來說，這家還是我心目中最香脆、最好吃的雞排，一個就飽。</p></div>
+                <div id="comments"><p>好久沒吃的豪大雞排，雞排依舊很大一片，本以為雞排只是大而無其他特色，竟意外的肉很多汁，胡椒粉一樣跟雞排很搭</p></div>
+                <div id="comments"><p>超級大，超級好吃的雞排，吃一片很有飽足感，每次到士林必買！</p></div>
+                <div id="comments"><p>從小到大的回憶，價格順應現代物價逐步上升，但不會影響購買慾望。</p></div>
+                <div id="comments"><p>雞排多汁，外皮酥脆，如你臉一樣大的份量。來士林可以一試。</p></div>
+            </div>
+        </div>
+        <div class="shop" id="show5" style="display: none;">
+            <img src="shopimg/阿輝麵線.jpg" alt="" id="bf">
+            <h3>阿輝麵線 3.8⭐</h3>
+            <div class="comment">
+                <div id="comments"><p>麵線的味道非常不錯，麵線本體也不會過於軟爛，是一碗很好下嚥的麵線。大腸也不錯吃，是偏有嚼勁的那種大腸，沒有魯到入口即化但也不會太難咀嚼，喜歡吃大腸的人可以嘗試。</p></div>
+                <div id="comments"><p>服務挺好的啊，外帶麵線才有20，內用要40，口味還行，有香菜很棒，肉粽還行，豬血糕還行～服務人員態度滿分💯</p></div>
+                <div id="comments"><p>不愧是米其林指南推薦的美食小吃，麵線湯頭不會死鹹，綜合麵線加了花枝塊跟入味的大腸，雖然漲價但小碗30元還是很便宜！</p></div>
+                <div id="comments"><p>麵線本體滾燙好吃，大腸滷的很入味，只要有來士林夜市必吃，價格真的是平民小吃價！</p></div>
+                <div id="comments"><p>大腸滷過相當入味且沒有豬腥味且大腸給的份量算不錯！</p></div>
+            </div>
+        </div>
+        <div class="shop" id="show6" style="display: none;">
+            <img src="shopimg/涼麵.jpg" alt="" id="f">
+            <h3>好朋友涼麵 4.2⭐</h3>
+            <div class="comment">
+                <div id="comments"><p>用檸檬及榨菜兩元素將傳統涼麵做出新格局，有如初識涼麵般驚豔</p></div>
+                <div id="comments"><p>味增湯加蛋初體驗！非常喜歡！涼麵雖然是麻醬但吃起來卻不會膩，裡面加的蒜汁很香，會一口接一口的吃完</p></div>
+                <div id="comments"><p>吃過數一數二好吃的涼麵、麵條Q香、麻醬香濃不膩不稠，還有黑胡椒榨菜肉絲搭配增加氣味，整體非常完美。</p></div>
+                <div id="comments"><p>麻辣涼麵小辣，醬汁帶點花生麻醬的味道口感綿密細緻，上面的榨菜跟辣醬帶點檸檬味，奇妙的平衡 我好喜歡 😍</p></div>
+                <div id="comments"><p>加辣的麻醬涼麵吃久也不膩，還有淡淡檸檬香更是清爽，味噌湯加蛋的蛋很滑順，口感很棒，推推👍
+                </p></div>
+            </div>
+        </div>
+    </div>
+    <!--羅東-->
+    <div class="nightmarket" id="yilan">
+        <article>
+            <h2><i class="fa-solid fa-map-pin"></i> 羅東夜市</h2>
+            <h3>地址</h3>
+            <p>宜蘭縣羅東鎮興東路與民權路口</p>
+            <h3>交通方式</h3> 
+            <p>（自行開車）<br>台九線省道-經宜蘭市-續走台九線9公里-羅東-興東路中山公園旁國光客運羅東站對面</p>
+            <p>（大眾運輸）<br>台鐵羅東前站下車-公正路直走-興東路左轉約200公尺 <br>羅東鎮觀光巴士-行駛時間是上午7時到中午12時、下午4時到晚上9時。約30分鐘一班。<br>首都客運：261、262、281皆有羅東夜市站</p>
+        </article>
+        <aside><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14501.768428180243!2d121.7682201!3d24.6773245!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x29dd12648cd9af6b!2z576F5p2x5aSc5biC!5e0!3m2!1szh-TW!2stw!4v1654925305071!5m2!1szh-TW!2stw" width="250" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></aside>
+    </div>
+    <div class="introduction">
+        <div class="food">
+            <div id="food1" onclick="one2()"  ondblclick="heart7()"><img src="foodimg/阿灶伯牛肉湯.jpg"><img src="love.png" alt="" id="love7"></div>
+            <div id="food2" onclick="two2()"  ondblclick="heart8()"><img src="foodimg/魏姐包心粉圓.png" ><img src="love.png" alt="" id="love8"></div>
+            <div id="food3" onclick="thr2()"  ondblclick="heart9()"><img src="foodimg/三星蔥餅.jpg" ><img src="love.png" alt="" id="love9"></div>
+        </div>
+        <hr>
+        <div class="shop" id="show7" style="display: none;">
+            <img src="foodimg/阿灶伯牛肉湯.jpg" alt="">
+            <h3>阿灶伯牛肉湯 3.8⭐</h3>
+            <div class="comment">
+                <div id="comments"><p>羊肉湯份量很足，清爽暖胃沒有羶味
+                    臭豆腐口感特別，不同於常見的外硬內乾，而是濕潤中吃得到酥皮與軟嫩的內裡</p></div>
+                <div id="comments"><p>羊肉湯份量很足，清爽暖胃沒有羶味</div>
+                <div id="comments"><p>羊肉湯是肉片非帶骨 羊味不重 愛吃羊肉的會覺得沒味道 臭豆腐沒有臭豆腐味很像炸嫩豆腐</p></div>
+                <div id="comments"><p>羊肉湯的羊肉很多，沒什麼羊味；湯頭偏甜有淡淡當歸味，對我來說中藥味有點太淡，底蘊不足</p></div>
+                <div id="comments"><p>好吃的清燉當歸羊肉片湯，不油不膩，料多半碗以上都是肉片和青菜，CP值高；臭豆腐外皮沒酥脆口感，內餡軟嫰，但與泡菜醬汁整體口味並不理想</p></div>
+            </div>
+        </div>
+        <div class="shop" id="show8" style="display: none;">
+            <img src="foodimg/魏姐包心粉圓.png" alt="" id="bn">
+            <h3>魏姐包心粉圓 4.8⭐</h3>
+            <div class="comment">
+                <div id="comments"><p>端上來就看起來好好吃 實際上也真的無可挑剔！冰的口感綿綿的 豆花也是綿密的 每個料都煮的相當好 口感滿分</p></div>
+                <div id="comments"><p>這裡的包心粉圓好吃，熱粉圓倒上冰凍的三色豆花，入口粉圓外冰內軟加上香濃豆花，絕配大推</p></div>
+                <div id="comments"><p>魏姐包心粉圓夠大顆，軟嫩好入口、包著一顆熟透的紅豆內餡就是經典特色，兩球非常大顆質地細緻的綿綿冰，搭配煮的軟透的甜豆、紅豆、紫米、綠豆蒜、花生，這一碗非常值得一試。</p></div>
+                <div id="comments"><p>包心粉圓本身很軟Q,口感佳，但冰淇淋的部分覺得相較普通，其餘配料也算好吃</p></div>
+                <div id="comments"><p>位子多、流動率高，炎熱夏日中羅東夜市的避暑勝地。一號餐很好吃，芝麻夠香、豆花很有味道，搭配溫溫的粉圓毫無違和，每次來每次吃
+                </p></div>
+            </div>
+        </div>
+        <div class="shop" id="show9" style="display: none;">
+            <img src="foodimg/三星蔥餅.jpg" alt="" id="f">
+            <h3>玉本舖三星蔥餅 4.2⭐</h3>
+            <div class="comment">
+                <div id="comments"><p>蔥多且新鮮，現點現做，一定要現吃才會好吃，不然悶一下脆皮馬上變軟又有油膩感，內餡調味屬於比較濃郁、重口味的，1顆$35、3顆$100，接受街口支付喔！</p></div>
+                <div id="comments"><p>宜蘭必吃之一，蔥爆滿滿，超滿意，以前沒發現蔥的美味，現在每去必吃兩個以上，另一家排隊蔥餅沒有這家好吃，真心推薦這家！！！香蔥多皮脆加胡椒粉 超完美</p></div>
+                <div id="comments"><p>帶回民宿吃還是熱的，不過皮軟掉比較可惜，內餡超多蔥，口味偏鹹但不錯吃</p></div>
+                <div id="comments"><p>喜歡蔥的不能錯過這間，滿滿的蔥餡帶著點絞肉提味，好吃又平價​<br> 兩側老闆詐得金黃酥脆，咬一口香氣四溢，油光氾濫。豬肉口感不油膩，非常耐吃！​<br>沒有另外加醬料，吃的出青蔥甜味，習慣重口味者可能會覺得有些清淡。</p></div>
+                <div id="comments"><p>老闆會很貼心的將蔥餅放到塑膠袋，外面再套一層紙袋。但也會因為塑膠袋無法散熱，很快會因為悶熱而溼軟。</p></div>
+            </div>
+        </div>
+    </div>
+    <a href="home.html"><img id="topImg" src="twimg/nm logo.png" alt=""></a>
+    <footer>
+        <p class="footer_text">&copy;2022NM.All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
